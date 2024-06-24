@@ -1,10 +1,11 @@
 import { Router } from "express";
 import { productsService } from "../managers/index.js";
 import uploader from '../services/uploader.js';
+import express from 'express';
 
 const router = Router();
 
-
+router.use(express.json());
 
 router.get('/', async (req, res) => {
     const products = await productsService.getProducts();
@@ -43,34 +44,35 @@ router.post('/', uploader.array('thumbnail', 3) , async (req, res) => {
 
     const product = req.body;
 
-    if(!product.name || !product.price || !product.code || !product.stock || !product.thumbnails) {
-        return res.render('Error')
+    if(!product.name || !product.price || !product.stock || !product.thumbnails) {
+        return res.status(400).send('Missing Information');
     }
 
-    try {
-        const newProduct = {
-            name: product.name,
-            price: product.price,
-            code: `${product.category}-1`,
-            category: product.catgeory,
-            stock: product.stock,
-            thumbnails: []
-        }
-
-        for(let i = 0; i < req.files.length; i++) {
-            newProduct.thumbnails.push({
-                mimetype: req.files[i].mimetype,
-                path: `/files/${req.files[i].filename}`,
-                main: i === 0
-            })
-        }
-
-        const result = await productsService.createProducts(newProduct);
-        res.send({status: 'success', payload: result});
-    } catch(error) {
-        console.log(error);
-        res.status(500).send({status: 'error', error: error});
+    
+    const newProduct = {
+        name: product.name,
+        price: product.price,
+        code: `${product.category}-1`,
+        category: product.catgeory,
+        stock: product.stock,
+        thumbnails: []
     }
+
+    for(let i = 0; i < req.files.length; i++) {
+        newProduct.thumbnails.push({
+            mimetype: req.files[i].mimetype,
+            path: `/files/${req.files[i].filename}`,
+            main: i === 0
+        })
+    }
+
+    const result = await productsService.createProducts(newProduct);
+        
+    if(result === -1) {
+        return res.status(500).send({status: 'error', error: 'Could not create the product'});
+    }
+
+    res.send({status: 'success', message: `Product created with id ${result}` });
 
 });
 
