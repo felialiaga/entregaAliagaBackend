@@ -1,0 +1,138 @@
+[
+	{
+		"name": "Camiseta Titular Argentina",
+		"price": "79.999",
+		"code": "argentina-champions-1",
+		"stock": "29",
+		"thumbnails": [
+			{
+				"mimetype": "image/jpeg",
+				"path": "/files/1719017036241-camisetaTitular.jpg",
+				"main": true
+			},
+			{
+				"mimetype": "image/jpeg",
+				"path": "/files/1719017036242-dibu.jpg",
+				"main": false
+			}
+		],
+		"id": 1
+	},
+	{
+		"name": "Campera Rompevientos Argentina",
+		"price": "119.999",
+		"code": "argentina-champions-1",
+		"stock": "6",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719019080879-rompevientosArgentina.avif",
+				"main": true
+			}
+		],
+		"id": 2
+	},
+	{
+		"name": "Camiseta Alternativa Azul",
+		"price": "124.999",
+		"code": "argentina-champions-1",
+		"stock": "11",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719095785348-camisetaAzul.avif",
+				"main": true
+			},
+			{
+				"mimetype": "image/jpeg",
+				"path": "/files/1719095785350-dePaul.jpg",
+				"main": false
+			}
+		],
+		"id": 3
+	},
+	{
+		"name": "Camiseta Argentina",
+		"price": "51.999",
+		"code": "argentina-champions-1",
+		"stock": "19",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719095923344-camisetaMarron.avif",
+				"main": true
+			}
+		],
+		"id": 5
+	},
+	{
+		"name": "Camiseta Manga Largas",
+		"price": "99.999",
+		"code": "argentina-champions-1",
+		"stock": "23",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719096008482-camisetaMarronLarga.avif",
+				"main": true
+			}
+		],
+		"id": 6
+	},
+	{
+		"name": "Buzo River",
+		"price": "99.999",
+		"code": "river-clothes-1",
+		"stock": "13",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719096318228-buzoRiver.avif",
+				"main": true
+			}
+		],
+		"id": 8
+	},
+	{
+		"name": "Camiseta River",
+		"price": "124.999",
+		"code": "river-clothes-1",
+		"stock": "13",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719096364443-camisetaRiver.avif",
+				"main": true
+			}
+		],
+		"id": 9
+	},
+	{
+		"name": "Camiseta Larga River",
+		"price": "149.999",
+		"code": "river-clothes-1",
+		"stock": "8",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719096397079-camisetaRiverLarga.avif",
+				"main": true
+			}
+		],
+		"id": 10
+	},
+	{
+		"name": "Camperon Parka Argentina",
+		"price": "259.999",
+		"code": "argentina-champions-1",
+		"stock": "4",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719096447856-camperonParkaArgentinaNegro.avif",
+				"main": true
+			}
+		],
+		"id": 11
+	}
+]

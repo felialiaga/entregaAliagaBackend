@@ -1,0 +1,45 @@
+<div class="containerForm">
+
+    <div class="left">
+
+        <h1> Create new product </h1>
+
+        <form action="/api/products" method="post" enctype="multipart/form-data" class="createForm" id="productForm" >
+
+            <label class="labelForm" > Name </label>
+            <input type="text" name="name" class="inputForm" placeholder="Name">
+
+            <label class="labelForm" > Price </label>
+            <input type="text" name="price" class="inputForm" placeholder="Price">
+
+            <label class="labelForm" > Category </label>
+            <select name="category" id="" class="inputForm">
+                <option value="all"> Select </option>
+                <option value="man-clothes"> Man Clothes </option>
+                <option value="women-clothes"> Women Clothes </option>
+                <option value="child-clothes"> Child Clothes </option>
+                <option value="accesories"> Accesories </option>
+                <option value="balls"> Balls </option>
+            </select>
+
+            <label class="labelForm" > Stock </label>
+            <input type="text" name="stock" class="inputForm" placeholder="Stock">
+
+            <label class="labelForm" > Select your images </label>
+            <input type="file" name="thumbnail" class="inputFiles" multiple>
+            
+            <button type="submit" class="submitForm">Create</button>
+            
+
+        </form>
+
+    </div>
+
+    <div class="products" id="products"></div>
+
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>_
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/RealTimeProducts.js"></script>

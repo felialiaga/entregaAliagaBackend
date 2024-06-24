@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerForm {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    width: 30%;
+    padding: 1rem;
+}
+
+.products {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 90vh;
+    margin: 1rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.createForm {
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+    gap: 1rem;
+    border-radius: 14px;
+}
+
+.inputForm {
+    border: none;
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+.labelForm {
+    color: #444;
+}
+
+.inputFiles {
+    border: none;
+}
+
+.submitForm {
+    border: none;
+    border-radius: 14px;
+    background-color: #000;
+    color: #fff;
+    font: 1em sans-serif;
+    padding: .5rem;
+    width: 30%;
+}
+
+.product {
+    display: flex;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    background-color: rgb(238, 238, 238);
+    margin: .4rem;
+}
+
+.productCardTitle {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.productCardMainImage {
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.productCardSeeMore {
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    padding: .7rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 14px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
+
+.deleteBtn {
+    width: 30%;
+    text-align: center;
+    padding: .7rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 14px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}

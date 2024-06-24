@@ -1,0 +1,28 @@
+<div class="productDetailContainer">
+
+    <div class="productDetailCard">
+
+        <div class="productDetailLeft">
+            <div class="productDetailAllImages" >
+
+                {{#each product.thumbnails}}
+                    <img src={{this.path}} class="productDetailImage">
+                {{/each}}
+            
+            </div>
+
+            <img src={{mainImage.path}} class="productDetailMainImage" >
+
+        </div>
+
+        <div class="productDetailRigth">
+            <h1 class="productDetailName"> {{product.name}} </h1>
+            <p class="productDetailPrice"> ${{product.price}} </p>
+            <p class="productDetailStock"> Stock: {{product.stock}} </p>
+
+            <a href="/" class="returnButton"> Return </a>
+        </div>
+
+    </div>
+
+</div>

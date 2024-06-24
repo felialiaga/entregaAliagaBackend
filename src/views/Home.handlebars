@@ -1,0 +1,46 @@
+<div class="createMore">
+    <a href="/realTimeProducts" class="create"> Create Product </a>
+
+</div>
+
+<div class="container">
+
+    {{#if products.length}}
+
+        <div class="products">
+
+            {{#each products}}
+
+                <div class="productCard">
+
+                    {{#if this.thumbnails.length}}
+
+                        {{#each this.thumbnails}}
+
+                            {{#if main}}
+                                <img src="{{this.path}}" class="productCardMainImage">
+                            {{/if}}
+
+                        {{/each}}
+                    {{/if}}
+
+                    <h2 class="productCardTitle"> {{this.name}} </h2>
+
+                    <a href="/products/{{this.id}}" class="productCardSeeMore">See more</a>
+
+                </div>
+
+            {{/each}}
+
+        </div>
+
+        {{else}}
+
+            <div class="emptyProducts">
+                <h3> There are not products here. Create them. </h3>
+                <a href="/realTimeProducts" class="create"> Create Product </a>
+            </div>
+
+    {{/if}}
+
+</div>
