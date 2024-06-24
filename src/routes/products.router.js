@@ -44,9 +44,9 @@ router.post('/', uploader.array('thumbnail', 3) , async (req, res) => {
 
     const product = req.body;
 
-    if(!product.name || !product.price || !product.stock || !product.thumbnails) {
-        return res.status(400).send('Missing Information');
-    }
+    // if(!product.name || !product.price || !product.stock || !product.thumbnails) {
+    //     return res.render('Error')
+    // }
 
     
     const newProduct = {

@@ -134,5 +134,61 @@
 			}
 		],
 		"id": 11
+	},
+	{
+		"name": "Pelota Argentina",
+		"price": "124.999",
+		"code": "balls-1",
+		"stock": "7",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719271760949-pelota.avif",
+				"main": true
+			}
+		],
+		"id": 12
+	},
+	{
+		"name": "Camperon River",
+		"price": "269.999",
+		"code": "man-clothes-1",
+		"stock": "6",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719271805092-camperonRiver.avif",
+				"main": true
+			}
+		],
+		"id": 13
+	},
+	{
+		"name": "Short Argentina",
+		"price": "79.999",
+		"code": "man-clothes-1",
+		"stock": "7",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719271923751-pantalon.avif",
+				"main": true
+			}
+		],
+		"id": 14
+	},
+	{
+		"name": "Short Argentina Azul",
+		"price": "79.999",
+		"code": "man-clothes-1",
+		"stock": "7",
+		"thumbnails": [
+			{
+				"mimetype": "image/avif",
+				"path": "/files/1719271944445-pantalonAzul.avif",
+				"main": true
+			}
+		],
+		"id": 15
 	}
 ]

@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { productsService } from "../managers/index.js";
-import express from 'express';
 
 const router = Router();
+
 
 
 router.get('/', async (req, res) => {

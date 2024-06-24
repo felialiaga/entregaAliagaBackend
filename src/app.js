@@ -11,12 +11,12 @@ import { Server } from 'socket.io';
 const PORT = process.env.PORT || 8080;
 const app = express();
 
-app.use(express.static(`${__dirname}/public`));
 
 app.engine('handlebars', handlebars.engine());
 app.set('views', `${__dirname}/views`);
 app.set('view engine', 'handlebars');
 
+app.use(express.static(`${__dirname}/public`));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
